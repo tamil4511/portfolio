@@ -1,7 +1,7 @@
 import React, { useEffect,useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPaperPlane, faPhone } from '@fortawesome/free-solid-svg-icons';
-import { faFacebook, faTwitter, faInstagram, faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faFacebook,  faInstagram, faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelopeCircleCheck } from '@fortawesome/free-solid-svg-icons';
 import img1 from '../images/tamilarasu-E-R.pdf';
 import emailjs from '@emailjs/browser';
@@ -36,7 +36,6 @@ const ContactMe = () => {
             <p><FontAwesomeIcon className='icon' icon={faPhone} /> 9159106519</p>
             <div className="social-icons">
               <a href="#contact"><FontAwesomeIcon className='contact-icon' icon={faFacebook} /></a>
-              <a href="#contact"><FontAwesomeIcon className='contact-icon' icon={faTwitter} /></a>
               <a href="#contact"><FontAwesomeIcon className='contact-icon' icon={faInstagram} /></a>
               <a href="#contact"><FontAwesomeIcon className='contact-icon' icon={faLinkedin} /></a>
               <a href="#contact"><FontAwesomeIcon className='contact-icon' icon={faGithub} /></a>

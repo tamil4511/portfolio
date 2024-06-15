@@ -8,14 +8,14 @@ import ContactMe from './ContactMe';
 import Education from './Education';
 import Skills from './Skills';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebook, faTwitter, faInstagram, faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faFacebook,  faInstagram, faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 
 function App() {
   const [currentState, setCurrentState] = useState("skills"); // Corrected useState usage
 
   useEffect(() => {
     const typed = new Typed('.position-text', {
-      strings: ['web Developer'],
+      strings: ['I\'m a Developer.','I\'m a Designer.','I build web apps.'],
       typeSpeed: 60,
       backSpeed: 60,
       loop: true,
@@ -47,15 +47,14 @@ function App() {
         <div className="content">
           <div className="row">
             <div className="col-12 f-1 col-md-6">
-              <h1> Hi, It's <span className='portfolio-text'>TAMILARASU E R</span></h1>
-              <h3>and I'm a <span className='portfolio-text position-text'></span></h3>
-              <p>To secure a responsible career opportunity to fully utilize my training and skills and enable myself to work my way up to designations while making a significant contribution to the success of the Company.</p>
+              <h1> Hello, I am <span className='portfolio-text'>TAMILARASU E R</span></h1>
+              <h3>and <span className='portfolio-text position-text'></span></h3>
+             
               <div className="social-media">
                 <a href="#"><FontAwesomeIcon className='icon' icon={faFacebook} /></a>
-                <a href="#"><FontAwesomeIcon className='icon' icon={faTwitter} /></a>
                 <a href="#"><FontAwesomeIcon className='icon' icon={faInstagram} /></a>
-                <a href="#"><FontAwesomeIcon className='icon' icon={faLinkedin} /></a>
-                <a href="#"><FontAwesomeIcon className='icon' icon={faGithub} /></a>
+                <a href="https://www.linkedin.com/in/tamilarasu-e-r/"><FontAwesomeIcon className='icon' icon={faLinkedin} /></a>
+                <a href="https://github.com/tamil4511/"><FontAwesomeIcon className='icon' icon={faGithub} /></a>
               </div>
             </div>
             <div className="col-6 f-2">
@@ -68,7 +67,7 @@ function App() {
           <div className="row" id='skills'>
             <div className="col-12 col-lg-4 hire-col" id='education'>
               <h1 className='why-hire'>Why hire me?</h1>
-              <p>To secure a responsible career opportunity to fully utilize my training and skills and enable myself to work my way up to designations while making a significant contribution to the success of the Company.</p>
+              <p>who loves building useful and efficient software. I enjoy solving problems and learning new technologies. I'm passionate about creating innovative solutions that make a positive impact.</p>
               <button className='hire-button' onClick={() => handleStateChange("skills")}>SKILLS</button>
               <button className='hire-button' onClick={() => handleStateChange("education")}>Education</button>
               <button className='hire-button' onClick={() => handleStateChange("aboutme")}>About me</button>
