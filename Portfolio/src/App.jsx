@@ -65,7 +65,7 @@ function App() {
 
         <div className="hire" id="about">
           <div className="row" id='skills'>
-            <div className="col-12 col-lg-4 hire-col" id='education'>
+            <div className="col-12 col-lg-4 hire-col"  id='education'>
               <h1 className='why-hire'>Why hire me?</h1>
               <p>who loves building useful and efficient software. I enjoy solving problems and learning new technologies. I'm passionate about creating innovative solutions that make a positive impact.</p>
               <button className='hire-button' onClick={() => handleStateChange("skills")}>SKILLS</button>
